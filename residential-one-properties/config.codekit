@@ -1128,8 +1128,8 @@
 		"useLibsass": 0
 		},
 	"\/sass\/style.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
+		"createSourceMap": 1,
+		"debugStyle": 1,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
@@ -1138,7 +1138,7 @@
 		"outputAbbreviatedPath": "\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 3,
+		"outputStyle": 1,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
@@ -1291,6 +1291,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/sftp-config.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sftp-config.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/sftp-config-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/sidebar.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1357,17 +1368,17 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "iMac1",
+"lastSavedByUser": "Graphic Designer",
 "manualImportLinks": {
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "Residential One Properties",
+	"displayValue": "Douglas Knolls",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "compass_gray"
+	"iconImageName": "meme-fry"
 	},
 "projectSettings": {
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoApplyPSLanguageSettingsStyle": 0,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -1521,7 +1532,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/dev.douglasknolls.com",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,

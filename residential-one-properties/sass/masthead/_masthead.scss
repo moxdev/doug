@@ -1,14 +1,13 @@
 #masthead {
-	background-color: $color__brand-1;
-	padding-bottom: 10px;
+	background-color: #fff;
 	padding-top: 10px;
-	color: #FFF;
+	color: $color__brand-4;
 
 	&:after {
 		content: '';
 		display: block;
 		height: 1px;
-		background-color: #FFF;
+		background-color: $color__brand-2;
 	}
 
 	.wrapper {
@@ -32,7 +31,7 @@
 		float: right;
 		font-family:$font__main-bold;
 		font-size: .875em;
-		color: #FFF;
+		color: $color__brand-1;
 
 		span {
 			font-family: $font__main-alt-2;

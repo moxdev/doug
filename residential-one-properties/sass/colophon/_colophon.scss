@@ -2,6 +2,7 @@
 	@include font-size(.75);
 	text-align: center;
 	padding-top: 10px;
+	background-color: $color__brand-3;
 
 	&:before {
 		content: '';
