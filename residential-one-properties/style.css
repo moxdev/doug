@@ -480,7 +480,7 @@ h1 {
 h2 {
   font-size: 1.5em;
   line-height: 1;
-  margin-bottom: .125em;
+  margin-bottom: .5em;
 }
 
 /* line 19, sass/typography/_headings.scss */
@@ -2366,7 +2366,7 @@ a:hover, a:active {
 /* line 2, sass/navigation/_menus.scss */
 .mobile-navigation {
   background-color: #71abc9;
-  position: fixed;
+  position: relative;
   z-index: 150;
   display: none;
   visibility: hidden;
@@ -2456,11 +2456,13 @@ a:hover, a:active {
 
 /* line 95, sass/navigation/_menus.scss */
 .menu-toggle {
-  position: relative;
+  position: absolute;
+  top: 20px;
+  right: 30px;
   z-index: 500;
   float: right;
   clear: right;
-  background: #258360;
+  background: #144734;
   padding: .25em .5em;
   font-size: 20px;
   font-size: 1.25rem;
@@ -2473,14 +2475,14 @@ a:hover, a:active {
 }
 
 /* Desktop Home Nav */
-/* line 110, sass/navigation/_menus.scss */
+/* line 112, sass/navigation/_menus.scss */
 .site-navigation-frontpage {
   float: right;
   clear: right;
   display: none;
   margin-top: 5px;
 }
-/* line 116, sass/navigation/_menus.scss */
+/* line 118, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul {
   margin: 0;
   padding: 0;
@@ -2490,7 +2492,7 @@ a:hover, a:active {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 125, sass/navigation/_menus.scss */
+/* line 127, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -2500,21 +2502,21 @@ a:hover, a:active {
   z-index: 99999;
   display: block;
 }
-/* line 134, sass/navigation/_menus.scss */
+/* line 136, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 139, sass/navigation/_menus.scss */
+/* line 141, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul li {
   padding: 0;
   margin: 0;
 }
-/* line 142, sass/navigation/_menus.scss */
+/* line 144, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul li:hover > ul, .site-navigation-frontpage ul ul li.focus > ul {
   left: 100%;
 }
-/* line 148, sass/navigation/_menus.scss */
+/* line 150, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul a {
   width: 200px;
   font-family: "ralewaylight", Arial, Helvetica, sans-serif;
@@ -2525,48 +2527,48 @@ a:hover, a:active {
   padding: .5em;
   color: #144734;
 }
-/* line 158, sass/navigation/_menus.scss */
+/* line 160, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul a:before {
   content: "" !important;
 }
-/* line 162, sass/navigation/_menus.scss */
+/* line 164, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul ul a:hover {
   background-color: #e5e5e5;
   color: #000;
 }
-/* line 169, sass/navigation/_menus.scss */
+/* line 171, sass/navigation/_menus.scss */
 .site-navigation-frontpage ul li:hover > ul,
 .site-navigation-frontpage ul li.focus > ul {
   left: auto;
 }
-/* line 175, sass/navigation/_menus.scss */
+/* line 177, sass/navigation/_menus.scss */
 .site-navigation-frontpage li {
   position: relative;
 }
-/* line 179, sass/navigation/_menus.scss */
+/* line 181, sass/navigation/_menus.scss */
 .site-navigation-frontpage > ul li {
   margin-left: 1em;
 }
-/* line 183, sass/navigation/_menus.scss */
+/* line 185, sass/navigation/_menus.scss */
 .site-navigation-frontpage a {
   text-decoration: none;
   display: block;
   color: #6d6e70;
   font-family: ralewayregular;
 }
-/* line 189, sass/navigation/_menus.scss */
+/* line 191, sass/navigation/_menus.scss */
 .site-navigation-frontpage a:hover {
   color: #144734;
 }
 @media (min-width: 1280px) {
-  /* line 110, sass/navigation/_menus.scss */
+  /* line 112, sass/navigation/_menus.scss */
   .site-navigation-frontpage {
     display: block;
   }
 }
 
 /* Desktop Drill Nav */
-/* line 200, sass/navigation/_menus.scss */
+/* line 202, sass/navigation/_menus.scss */
 .site-navigation {
   background-color: #71abc9;
   padding: 0 35px;
@@ -2575,7 +2577,7 @@ a:hover, a:active {
   display: none;
   position: relative;
 }
-/* line 208, sass/navigation/_menus.scss */
+/* line 210, sass/navigation/_menus.scss */
 .site-navigation:before {
   content: '';
   display: block;
@@ -2586,7 +2588,7 @@ a:hover, a:active {
   margin-top: -12px;
   background-color: #71abc9;
 }
-/* line 219, sass/navigation/_menus.scss */
+/* line 221, sass/navigation/_menus.scss */
 .site-navigation ul {
   margin: 0 auto;
   padding: 0;
@@ -2598,7 +2600,7 @@ a:hover, a:active {
   -ms-flex-pack: center;
   justify-content: center;
 }
-/* line 230, sass/navigation/_menus.scss */
+/* line 232, sass/navigation/_menus.scss */
 .site-navigation ul ul {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   float: left;
@@ -2608,20 +2610,20 @@ a:hover, a:active {
   z-index: 99999;
   display: block;
 }
-/* line 239, sass/navigation/_menus.scss */
+/* line 241, sass/navigation/_menus.scss */
 .site-navigation ul ul ul {
   left: -999em;
   top: 0;
 }
-/* line 244, sass/navigation/_menus.scss */
+/* line 246, sass/navigation/_menus.scss */
 .site-navigation ul ul li {
   padding: 0;
 }
-/* line 246, sass/navigation/_menus.scss */
+/* line 248, sass/navigation/_menus.scss */
 .site-navigation ul ul li:hover > ul, .site-navigation ul ul li.focus > ul {
   left: 100%;
 }
-/* line 252, sass/navigation/_menus.scss */
+/* line 254, sass/navigation/_menus.scss */
 .site-navigation ul ul a {
   width: 200px;
   font-family: "ralewaylight", Arial, Helvetica, sans-serif;
@@ -2632,29 +2634,29 @@ a:hover, a:active {
   padding: .5em;
   color: #144734;
 }
-/* line 262, sass/navigation/_menus.scss */
+/* line 264, sass/navigation/_menus.scss */
 .site-navigation ul ul a:before {
   content: "" !important;
 }
-/* line 267, sass/navigation/_menus.scss */
+/* line 269, sass/navigation/_menus.scss */
 .site-navigation ul ul .current_page_item > a, .site-navigation ul ul a:hover {
   background-color: #e5e5e5;
 }
-/* line 280, sass/navigation/_menus.scss */
+/* line 282, sass/navigation/_menus.scss */
 .site-navigation ul li:hover > ul,
 .site-navigation ul li.focus > ul {
   left: auto;
 }
-/* line 286, sass/navigation/_menus.scss */
+/* line 288, sass/navigation/_menus.scss */
 .site-navigation li {
   position: relative;
   padding: 0 .5em;
 }
-/* line 290, sass/navigation/_menus.scss */
+/* line 292, sass/navigation/_menus.scss */
 .site-navigation li:before {
   display: none;
 }
-/* line 295, sass/navigation/_menus.scss */
+/* line 297, sass/navigation/_menus.scss */
 .site-navigation a {
   font-family: "ralewaybold", Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -2665,7 +2667,7 @@ a:hover, a:active {
   letter-spacing: .03125em;
   color: #FFF;
 }
-/* line 305, sass/navigation/_menus.scss */
+/* line 307, sass/navigation/_menus.scss */
 .site-navigation a:before {
   font-size: 1.75em;
   line-height: 1;
@@ -2673,42 +2675,42 @@ a:hover, a:active {
   left: 10px;
   top: 20%;
 }
-/* line 314, sass/navigation/_menus.scss */
+/* line 316, sass/navigation/_menus.scss */
 .site-navigation .current_page_item > a,
 .site-navigation .current-menu-item > a,
 .site-navigation a:hover {
   color: #144734;
 }
-/* line 320, sass/navigation/_menus.scss */
+/* line 322, sass/navigation/_menus.scss */
 .site-navigation .current_page_item > a:hover {
   cursor: text;
 }
 @media (min-width: 1280px) {
-  /* line 200, sass/navigation/_menus.scss */
+  /* line 202, sass/navigation/_menus.scss */
   .site-navigation {
     display: block;
   }
 }
 
 /* Desktop Alt Nav */
-/* line 330, sass/navigation/_menus.scss */
+/* line 332, sass/navigation/_menus.scss */
 .alt-navigation {
   float: right;
   margin: 0 0 0 1em;
   display: none;
 }
-/* line 335, sass/navigation/_menus.scss */
+/* line 337, sass/navigation/_menus.scss */
 .alt-navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-/* line 341, sass/navigation/_menus.scss */
+/* line 343, sass/navigation/_menus.scss */
 .alt-navigation li {
   float: left;
   margin-left: .25em;
 }
-/* line 346, sass/navigation/_menus.scss */
+/* line 348, sass/navigation/_menus.scss */
 .alt-navigation a {
   text-decoration: none;
   font-size: .8125em;
@@ -2716,23 +2718,23 @@ a:hover, a:active {
   padding: .25em .6125em;
   color: #FFF;
 }
-/* line 354, sass/navigation/_menus.scss */
+/* line 356, sass/navigation/_menus.scss */
 .alt-navigation .current_page_item > a, .alt-navigation a:hover {
-  background-color: #FFF;
-  color: #000;
+  background-color: #6d6e70;
+  color: #FFF;
 }
-/* line 359, sass/navigation/_menus.scss */
+/* line 361, sass/navigation/_menus.scss */
 .alt-navigation .current_page_item > a:hover {
   cursor: text;
 }
 @media (min-width: 1280px) {
-  /* line 330, sass/navigation/_menus.scss */
+  /* line 332, sass/navigation/_menus.scss */
   .alt-navigation {
     display: block;
   }
 }
 
-/* line 368, sass/navigation/_menus.scss */
+/* line 370, sass/navigation/_menus.scss */
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
@@ -2740,21 +2742,21 @@ a:hover, a:active {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 375, sass/navigation/_menus.scss */
+/* line 377, sass/navigation/_menus.scss */
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
   margin: 0 0 1.5em;
   overflow: hidden;
 }
-/* line 380, sass/navigation/_menus.scss */
+/* line 382, sass/navigation/_menus.scss */
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
   width: 50%;
 }
-/* line 385, sass/navigation/_menus.scss */
+/* line 387, sass/navigation/_menus.scss */
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
@@ -3313,7 +3315,7 @@ object {
 }
 /* line 13, sass/masthead/_masthead.scss */
 #masthead .wrapper {
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
 /* line 17, sass/masthead/_masthead.scss */
 #masthead .site-branding {
@@ -3327,20 +3329,23 @@ object {
 /* line 25, sass/masthead/_masthead.scss */
 #masthead .site-branding .custom-logo-link {
   display: block;
+  padding-bottom: 30px;
 }
-/* line 30, sass/masthead/_masthead.scss */
+/* line 31, sass/masthead/_masthead.scss */
 #masthead .masthead-tel {
   float: right;
   font-family: "ralewaybold", Arial, Helvetica, sans-serif;
   font-size: .875em;
   color: #144734;
+  padding-bottom: 10px;
+  padding-top: 3.6em;
 }
-/* line 36, sass/masthead/_masthead.scss */
+/* line 39, sass/masthead/_masthead.scss */
 #masthead .masthead-tel span {
   font-family: "ralewaymedium", Arial, Helvetica, sans-serif;
   display: none;
 }
-/* line 42, sass/masthead/_masthead.scss */
+/* line 45, sass/masthead/_masthead.scss */
 #masthead .flex {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -3356,24 +3361,23 @@ object {
   -ms-flex-align: baseline;
   align-items: baseline;
 }
-/* line 57, sass/masthead/_masthead.scss */
+/* line 60, sass/masthead/_masthead.scss */
 #masthead .flex .flex-item {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  position: relative;
 }
 @media (min-width: 575px) {
-  /* line 65, sass/masthead/_masthead.scss */
+  /* line 67, sass/masthead/_masthead.scss */
   #masthead .masthead-tel {
     font-size: 1em;
   }
 }
 @media (min-width: 750px) {
-  /* line 71, sass/masthead/_masthead.scss */
+  /* line 73, sass/masthead/_masthead.scss */
   #masthead .site-branding {
     max-width: 275px;
   }
-  /* line 76, sass/masthead/_masthead.scss */
+  /* line 78, sass/masthead/_masthead.scss */
   #masthead .masthead-tel span {
     display: inline;
   }
@@ -3383,10 +3387,22 @@ object {
   #masthead {
     padding-top: 25px;
   }
-  /* line 85, sass/masthead/_masthead.scss */
+  /* line 87, sass/masthead/_masthead.scss */
   #masthead .site-branding {
     padding-bottom: 5px;
     max-width: 300px;
+  }
+  /* line 91, sass/masthead/_masthead.scss */
+  #masthead .site-branding .custom-logo-link {
+    padding-bottom: 0;
+  }
+  /* line 95, sass/masthead/_masthead.scss */
+  #masthead .flex-item {
+    position: relative;
+  }
+  /* line 98, sass/masthead/_masthead.scss */
+  #masthead .flex-item .masthead-tel {
+    padding-top: 0;
   }
 }
 
@@ -3400,56 +3416,57 @@ object {
   text-align: center;
   padding-top: 10px;
   background-color: #A8A8A8;
+  color: #000;
 }
-/* line 7, sass/colophon/_colophon.scss */
+/* line 8, sass/colophon/_colophon.scss */
 #colophon:before {
   content: '';
   display: block;
   height: 1px;
   background-color: #FFF;
 }
-/* line 14, sass/colophon/_colophon.scss */
+/* line 15, sass/colophon/_colophon.scss */
 #colophon .wrapper {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 19, sass/colophon/_colophon.scss */
+/* line 20, sass/colophon/_colophon.scss */
 #colophon a {
   color: inherit;
   text-decoration: none;
 }
-/* line 24, sass/colophon/_colophon.scss */
+/* line 25, sass/colophon/_colophon.scss */
 #colophon .contact-info {
   margin-bottom: 1.5em;
 }
-/* line 27, sass/colophon/_colophon.scss */
+/* line 28, sass/colophon/_colophon.scss */
 #colophon .contact-info .ftr-name {
   display: none;
 }
-/* line 31, sass/colophon/_colophon.scss */
+/* line 32, sass/colophon/_colophon.scss */
 #colophon .contact-info .ftr-address {
   display: table;
   width: 100%;
 }
-/* line 37, sass/colophon/_colophon.scss */
+/* line 38, sass/colophon/_colophon.scss */
 #colophon .contact-info .colophon-ph a:before {
   content: 'P: ';
 }
-/* line 43, sass/colophon/_colophon.scss */
+/* line 44, sass/colophon/_colophon.scss */
 #colophon .contact-info .colophon-fx a:before {
   content: 'F: ';
 }
-/* line 49, sass/colophon/_colophon.scss */
+/* line 50, sass/colophon/_colophon.scss */
 #colophon .contact-info .colophon-fx a:before {
   content: 'F: ';
 }
-/* line 55, sass/colophon/_colophon.scss */
+/* line 56, sass/colophon/_colophon.scss */
 #colophon #eho {
   margin: 0 auto .5em;
   width: 29px;
   height: 32px;
 }
-/* line 61, sass/colophon/_colophon.scss */
+/* line 62, sass/colophon/_colophon.scss */
 #colophon #res-one-link {
   text-transform: lowercase;
   text-align: left;
@@ -3458,14 +3475,14 @@ object {
   font-size: .8125em;
   display: block;
 }
-/* line 69, sass/colophon/_colophon.scss */
+/* line 70, sass/colophon/_colophon.scss */
 #colophon #res-one-link svg {
   width: 130px;
   height: 21px;
   display: block;
   margin: 3px auto 0;
 }
-/* line 77, sass/colophon/_colophon.scss */
+/* line 78, sass/colophon/_colophon.scss */
 #colophon #slug {
   font-size: .75em;
 }
@@ -3474,24 +3491,24 @@ object {
   #colophon {
     text-align: left;
   }
-  /* line 84, sass/colophon/_colophon.scss */
+  /* line 85, sass/colophon/_colophon.scss */
   #colophon #eho, #colophon .contact-info {
     float: left;
   }
-  /* line 88, sass/colophon/_colophon.scss */
+  /* line 89, sass/colophon/_colophon.scss */
   #colophon #eho {
     margin-right: 1em;
   }
-  /* line 92, sass/colophon/_colophon.scss */
+  /* line 93, sass/colophon/_colophon.scss */
   #colophon #res-one-link {
     float: right;
     width: 140px;
   }
-  /* line 96, sass/colophon/_colophon.scss */
+  /* line 97, sass/colophon/_colophon.scss */
   #colophon #res-one-link svg {
     float: left;
   }
-  /* line 101, sass/colophon/_colophon.scss */
+  /* line 102, sass/colophon/_colophon.scss */
   #colophon #slug {
     float: right;
     clear: right;
@@ -3499,29 +3516,29 @@ object {
   }
 }
 @media (min-width: 750px) {
-  /* line 110, sass/colophon/_colophon.scss */
+  /* line 111, sass/colophon/_colophon.scss */
   #colophon .contact-info .ftr-name {
     display: block;
   }
-  /* line 114, sass/colophon/_colophon.scss */
+  /* line 115, sass/colophon/_colophon.scss */
   #colophon .contact-info .ftr-address, #colophon .contact-info .colophon-ph, #colophon .contact-info .colophon-fx {
     display: inline;
   }
-  /* line 118, sass/colophon/_colophon.scss */
+  /* line 119, sass/colophon/_colophon.scss */
   #colophon .contact-info .ftr-address {
     margin-right: .5em;
   }
-  /* line 122, sass/colophon/_colophon.scss */
+  /* line 123, sass/colophon/_colophon.scss */
   #colophon .contact-info .colophon-ph {
     margin-right: 1em;
   }
 }
 @media (min-width: 950px) {
-  /* line 129, sass/colophon/_colophon.scss */
+  /* line 130, sass/colophon/_colophon.scss */
   #colophon #res-one-link {
     width: 175px;
   }
-  /* line 132, sass/colophon/_colophon.scss */
+  /* line 133, sass/colophon/_colophon.scss */
   #colophon #res-one-link svg {
     width: 165px;
     height: 27px;
@@ -3788,7 +3805,13 @@ object {
     padding: 30px 60px;
     max-width: 710px;
   }
-  /* line 135, sass/page-templates/_floor-plans.scss */
+  /* line 131, sass/page-templates/_floor-plans.scss */
+  .page-template-page-floor-plans .flex #floor-plan-listing #plan-nav {
+    font-size: .83em;
+    margin: 0;
+    justify-content: none;
+  }
+  /* line 140, sass/page-templates/_floor-plans.scss */
   .page-template-page-floor-plans .flex #article-wrapper article {
     padding-left: 60px;
     padding-right: 60px;

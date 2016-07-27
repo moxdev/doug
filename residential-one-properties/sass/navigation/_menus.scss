@@ -1,7 +1,7 @@
 /* Mobile Navigation */
 .mobile-navigation {
 	background-color: $color__brand-2;
-	position: fixed;
+	position: relative;
 	z-index: 150;
 	display: none;
 	visibility: hidden;
@@ -93,11 +93,13 @@
 }
 
 .menu-toggle {
-	position: relative;
+	position: absolute;
+	top: 20px;
+	right: 30px;
 	z-index: 500;
 	float: right;
 	clear: right;
-	background:lighten( $color__background-button, 15% );
+	background: $color__background-button;
 	padding: .25em .5em;
 	@include font-size(1.25);
 
@@ -352,8 +354,8 @@
 	}
 
 	.current_page_item > a, a:hover {
-		background-color: #FFF;
-		color: #000;
+		background-color: $color__brand-4;
+		color: #FFF;
 	}
 
 	.current_page_item > a:hover {

@@ -11,7 +11,7 @@
 	}
 
 	.wrapper {
-		padding-bottom: 5px;
+		padding-bottom: 20px;
 	}
 
 	.site-branding {
@@ -24,6 +24,7 @@
 
 		.custom-logo-link {
 			display: block;
+			padding-bottom: 30px;
 		}
 	}
 
@@ -32,6 +33,8 @@
 		font-family:$font__main-bold;
 		font-size: .875em;
 		color: $color__brand-1;
+		padding-bottom: 10px;
+		padding-top: 3.6em;
 
 		span {
 			font-family: $font__main-alt-2;
@@ -57,7 +60,6 @@
 		.flex-item {
 			-ms-flex: 1 1 auto;
 			flex: 1 1 auto;
-			position: relative;
 		}
 	}
 
@@ -85,6 +87,17 @@
 		.site-branding {
 			padding-bottom: 5px;
 			max-width: 300px;
+
+			.custom-logo-link {
+				padding-bottom: 0;
+			}
+		}
+		.flex-item {
+			position: relative;
+
+			.masthead-tel {
+				padding-top: 0;
+			}
 		}
 	}
 }
